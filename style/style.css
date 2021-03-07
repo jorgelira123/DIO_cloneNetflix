@@ -1,0 +1,117 @@
+:root{
+    --vermelha: #E50914;
+    --preta:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* Elemento Base */
+
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex; /* alinha os elementos em tela */
+    flex-direction: row; /* default */
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelha);
+    font-family: "Arial Black", Times;
+    font-size: 40px;
+}
+
+header nav a{ 
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+
+}
+
+header nav a:hover{ /* passa o mouse faz a ação */
+    color: #fff;
+}
+
+/* Filme principal */
+
+.anime-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("/DIO_cloneNetflix/img/D5KrIP0XsAIwtwq.jpg");
+   
+    max-width: 100%;
+
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    
+
+}
+
+.anime-principal .description{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.anime-principal .title{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, 0.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    margin-bottom: 3em;
+
+    cursor: pointer; /* Curso quando o mouse passar */
+    transition: .3s ease all; /* Tempo quando o mouse passar */
+}
+
+.botao:hover{ /* Açao do mouse passar */
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.anime-principal .container{
+    width: 70%; /*Usar %, px pode deixar preso*/
+}
+
+.box-filme{
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+    max-width: 200px;
+}
+
+.carroseul-filmes{
+    margin-top: 5px;
+}
