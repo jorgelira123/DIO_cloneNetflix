@@ -3,6 +3,14 @@
     --preta:#141414;
 }
 
+html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -58,8 +66,10 @@ header nav a:hover{ /* passa o mouse faz a ação */
     justify-content: center;
     align-items: flex-start;
     
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
     
-
 }
 
 .anime-principal .description{
